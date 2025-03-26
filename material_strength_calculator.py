@@ -4,8 +4,8 @@
 
 def main():
     applied_force = float(input("Enter force (N) : "))
-    cross_sectional_area = float(input("Enter area (mm^2) : "))
-    sigma = applied_force / (cross_sectional_area / 1000000)
+    cross_sectional_area = float(input("Enter area (m^2) : "))
+    sigma = applied_force / (cross_sectional_area)
 
     print(f"So, the stress on the beam is {sigma:,.2f} Pa.")
 
